@@ -1,24 +1,7 @@
-.guess{
+body{
   background-color: white;
-  font-size: 60px;
-  display: inline;
-  /*padding: 20px 28px;*/
-  padding: 0 25px;
-  border-radius: 20px;
-  border: solid 2px black;
-  margin: 0 5px;
-}
-.center {
-  text-align: center;
-}
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.shadow{
-  box-shadow: 2px 2px 5px 0px black
+  background-image: url(binary.jpg);
+  background-position: center;
 }
 ul {
     list-style: none;
@@ -28,6 +11,21 @@ img {
     display: inline;
     width: 200px;
     /*height: 100px;*/
+}
+.guess{
+  background-color: white;
+  font-size: 60px;
+  display: inline;
+  padding: 0 25px;
+  border-radius: 20px;
+  border: solid 2px black;
+  margin: 0 5px;
+}
+.center {
+  text-align: center;
+}
+.shadow{
+  box-shadow: 2px 2px 5px 0px black
 }
 #input-parent{
   /*width: 160px;*/
@@ -65,9 +63,4 @@ img {
   border-radius: 10px;
   margin: 50px auto;
   width: 480px;
-}
-body{
-  background-color: white;
-  background-image: url(binary.jpg);
-  background-position: center;
 }

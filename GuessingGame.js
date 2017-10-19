@@ -44,15 +44,17 @@ Game.prototype.playersGuessSubmission = function(guess){
 }
 
 Game.prototype.checkGuess = function(){
-  if(this.playersGuess === this.winningNumber){
-    return "You Win!";
-  } else if(this.pastGuesses.indexOf(this.playersGuess) > -1) {
+  if(this.pastGuesses.indexOf(this.playersGuess) > -1) {
     return "You have already guessed that number.";
-  } else if(this.pastGuesses.length === 4){
-    return "You Lose.";
   }
   this.pastGuesses.push(this.playersGuess);
 
+  if(this.playersGuess === this.winningNumber){
+    return "You Win!";
+  }
+  if(this.pastGuesses.length === 4){
+    return "You Lose.";
+  }
   if(Math.abs(this.playersGuess-this.winningNumber) < 10){
     return "You\'re burning up!"
   }

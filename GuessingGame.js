@@ -52,7 +52,7 @@ Game.prototype.checkGuess = function(){
   if(this.playersGuess === this.winningNumber){
     return "You Win!";
   }
-  if(this.pastGuesses.length === 4){
+  if(this.pastGuesses.length === 5){
     return "You Lose.";
   }
   if(Math.abs(this.playersGuess-this.winningNumber) < 10){

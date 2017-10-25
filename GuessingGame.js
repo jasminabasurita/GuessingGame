@@ -85,6 +85,7 @@ function submit(game){
   var guess = +$('#player-input').val();
   var response = game.playersGuessSubmission(guess);
   $('#title').text(response);
+  $('#player-input').val('');
   if(response === 'You have already guessed that number.'){
     $('#subtitle').text('Guess Again');
   } else {
